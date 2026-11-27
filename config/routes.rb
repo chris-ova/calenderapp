@@ -11,6 +11,10 @@ Rails.application.routes.draw do
   get "dashboard", to: "dashboard#show", as: :dashboard
   get "settings",  to: "settings#show",  as: :settings
 
+  resources :todos, only: %i[ create update destroy ] do
+    patch :reorder, on: :collection
+  end
+
   namespace :admin do
     root to: redirect("/admin/users")
     get "design-system", to: "design_system#show", as: :design_system
