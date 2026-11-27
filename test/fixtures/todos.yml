@@ -1,0 +1,26 @@
+one:
+  user: one
+  name: Write report
+  description: Quarterly numbers
+  completed: false
+  position: 1
+  due_on: 2000-01-01
+
+three:
+  user: one
+  name: Book flights
+  completed: false
+  position: 2
+
+four:
+  user: one
+  name: Old finished task
+  completed: true
+  position: 3
+
+two:
+  user: two
+  name: Other user's todo
+  description: Not yours
+  completed: false
+  position: 1
